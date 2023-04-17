@@ -5,9 +5,9 @@
 # -*- coding: utf-8 -*-
 import allure
 from api.api import Api
-from model.reqres.create_model import RequestCreateUserModel
-from model.reqres.single_user_model import ResponseSingleUserModel
-from model.reqres.update_model import RequestUpdateUserModel
+from model.create_model import RequestCreateUserModel
+from model.single_user_model import ResponseSingleUserModel
+from model.update_model import RequestUpdateUserModel
 
 
 class ReqresApi(Api):

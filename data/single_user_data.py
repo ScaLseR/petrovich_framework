@@ -1,6 +1,6 @@
 """Дата файл для тестирования api reqres, single user"""
 # -*- coding: utf-8 -*-
-from model.reqres.single_user_model import ResponseSingleUserModel
+from model.single_user_model import ResponseSingleUserModel
 
 
 # эталонные модели данных для проверки в тестах
