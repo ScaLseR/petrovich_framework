@@ -5,6 +5,9 @@
 # -*- coding: utf-8 -*-
 import allure
 from api.api import Api
+from model.reqres.create_model import RequestCreateUserModel, ResponseCreateUserModel
+from model.reqres.single_user_model import ResponseSingleUserModel
+from model.reqres.update_model import RequestUpdateUserModel, ResponseUpdateUserModel
 
 
 class ReqresApi(Api):
@@ -22,14 +25,14 @@ class ReqresApi(Api):
                         headers=self._HEADERS)
 
     @allure.step('Обращение к create')
-    def reqres_create(self, param_request_body: ReqresApiCreateModel):
+    def reqres_create(self, param_request_body: RequestCreateUserModel):
         return self.post(service_name=self._URL,
                          endpoint=self._ENDPOINT,
                          headers=self._HEADERS,
                          json_body=param_request_body.to_dict())
 
     @allure.step('Обращение к update')
-    def reqres_update(self, user_id: int, param_request_body: ReqresApiUpdateModel):
+    def reqres_update(self, user_id: int, param_request_body: RequestUpdateUserModel):
         return self.put(service_name=self._URL,
                         endpoint=self._ENDPOINT + str(user_id),
                         headers=self._HEADERS,
