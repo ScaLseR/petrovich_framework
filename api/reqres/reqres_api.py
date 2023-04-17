@@ -5,9 +5,9 @@
 # -*- coding: utf-8 -*-
 import allure
 from api.api import Api
-from model.reqres.create_model import RequestCreateUserModel, ResponseCreateUserModel
+from model.reqres.create_model import RequestCreateUserModel
 from model.reqres.single_user_model import ResponseSingleUserModel
-from model.reqres.update_model import RequestUpdateUserModel, ResponseUpdateUserModel
+from model.reqres.update_model import RequestUpdateUserModel
 
 
 class ReqresApi(Api):
@@ -43,3 +43,16 @@ class ReqresApi(Api):
         return self.delete(service_name=self._URL,
                            endpoint=self._ENDPOINT + str(user_id),
                            headers=self._HEADERS)
+
+    """Собираем респонс в обьект для последующего использования"""
+    def deserialize_single_user(self):
+        """для метода get (single user)"""
+        payload = self.get_payload([])
+        return ResponseSingleUserModel(id=payload['data', 'id'],
+                                       email=payload['data', 'email'],
+                                       first_name=payload['data', 'first_name'],
+                                       last_name=payload['data', 'last_name'],
+                                       avatar=payload['data', 'avatar'],
+                                       url=payload['support', 'url'],
+                                       text=payload['support', 'text'])
+
