@@ -6,3 +6,9 @@ def load_json_schema(path: str, json_schema: str):
     """Подгрузка json схемы из файла"""
     module = import_module(f"schema.{path}")
     return getattr(module, json_schema)
+
+
+def load_tests(path: str, test_data: str):
+    """Подгрузка из файла тестовых данных для параметризации тестов"""
+    module = import_module(f"data.{path}")
+    return getattr(module, test_data)
