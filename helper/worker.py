@@ -2,7 +2,7 @@
 from importlib import import_module
 
 
-def load_json_schema(path: str, json_schema: str):
+def load_json_schema(path: str, json_schema: str = 'schema'):
     """Подгрузка json схемы из файла"""
     module = import_module(f"schema.{path}")
     return getattr(module, json_schema)
