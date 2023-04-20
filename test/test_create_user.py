@@ -10,8 +10,8 @@ pytestmark = [allure.parent_suite("reqres"),
 
 @allure.title('Запрос на создание пользователя')
 @pytest.mark.parametrize('request_parameters',
-                         load_data('reqres.create_user_data', 'data'))
+                         load_data('data.create_user_data', 'data'))
 def test_single_user_valid_parameters(reqres_api, request_parameters):
     reqres_api.reqres_create(request_parameters).status_code_should_be(201).\
-        json_schema_should_be_valid('reqres.create_user_schema', 'schema').\
+        json_schema_should_be_valid('create_user_schema', 'schema').\
         have_value_in_response_parameter(['name'], request_parameters.name)
