@@ -1,7 +1,7 @@
 """Тест кейс для api reqres, create user"""
 import allure
 import pytest
-from helper.worker import load_data
+from helper.load import load_data
 
 pytest_plugins = ["fixture.reqres_api"]
 pytestmark = [allure.parent_suite("reqres"),

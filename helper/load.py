@@ -8,7 +8,7 @@ def load_json_schema(path: str, json_schema: str = 'schema'):
     return getattr(module, json_schema)
 
 
-def load_data(path: str, test_data: str):
+def load_data(path: str, test_data: str = 'data'):
     """Подгрузка из файла тестовых данных для параметризации тестов"""
     module = import_module(f"data.{path}")
     return getattr(module, test_data)

@@ -5,7 +5,7 @@ import allure
 import requests
 from jsonschema import validate
 from helper.logger import log
-from helper.worker import load_json_schema
+from helper.load import load_json_schema
 from helper.parser import get_data
 
 
