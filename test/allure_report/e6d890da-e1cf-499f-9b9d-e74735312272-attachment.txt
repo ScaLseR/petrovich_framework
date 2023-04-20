@@ -1,0 +1,12 @@
+[32mINFO    [0m root:logger.py:10 REQUEST METHOD: POST
+[32mINFO    [0m root:logger.py:11 REQUEST URL: https://reqres.in/api/users/
+[32mINFO    [0m root:logger.py:12 REQUEST HEADERS: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '77'}
+[32mINFO    [0m root:logger.py:13 REQUEST BODY: {'name': 'Бобр Добр', 'job': '#@^&T'}
+
+[32mINFO    [0m root:logger.py:14 STATUS CODE: 201
+[32mINFO    [0m root:logger.py:15 RESPONSE TIME: 328 ms
+
+[32mINFO    [0m root:logger.py:16 RESPONSE HEADERS: {'Date': 'Thu, 20 Apr 2023 14:51:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '92', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"5c-IXC+i9hg40pPz7ElkVPScgizUew"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lAv31Lrfbm8z%2F9GRXjS6LUX%2BLx21Xi50CLevs1uN9sOO0EadGGSQye5svn2vosgX9Hljh4gr0FFE%2FBaLEWtX1mIGDwgwR%2ByBgVI6fkutgvR%2BYGEfEkatOgW2pQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7bae351cbc7976a9-DME'}
+[32mINFO    [0m root:logger.py:17 RESPONSE BODY: {"name":"Бобр Добр","job":"#@^&T","id":"652","createdAt":"2023-04-20T14:51:48.741Z"}
+.
+.

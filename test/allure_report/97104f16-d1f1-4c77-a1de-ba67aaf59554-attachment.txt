@@ -1,0 +1,12 @@
+[32mINFO    [0m root:logger.py:10 REQUEST METHOD: GET
+[32mINFO    [0m root:logger.py:11 REQUEST URL: https://reqres.in/api/users/100
+[32mINFO    [0m root:logger.py:12 REQUEST HEADERS: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8'}
+[32mINFO    [0m root:logger.py:13 REQUEST BODY: None
+
+[32mINFO    [0m root:logger.py:14 STATUS CODE: 404
+[32mINFO    [0m root:logger.py:15 RESPONSE TIME: 166 ms
+
+[32mINFO    [0m root:logger.py:16 RESPONSE HEADERS: {'Date': 'Thu, 20 Apr 2023 14:51:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '29', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=IjnY5LZQeKKFJVItTss6gWIpwLO4pQbg%2Be%2FJITHKCK36yB01JQIpK9M0aDw2O1Bj3vvHLumEdq5YIv1U%2BuAdWJmpzqMh6Z8OODoojOq%2By9LH5VBpdt6kquSdtQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '7bae35210a179d84-DME'}
+[32mINFO    [0m root:logger.py:17 RESPONSE BODY: {}
+.
+.
