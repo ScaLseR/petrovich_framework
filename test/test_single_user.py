@@ -22,4 +22,4 @@ def test_single_user_wo_parameters(reqres_api, user_id, expected_data):
 def test_single_user_valid_parameters(reqres_api, user_id, expected_data):
     reqres_api.reqres_single_user(user_id).status_code_should_be(200).\
         json_schema_should_be_valid('single_user_schema').\
-        objects_should_be(expected_data, reqres_api.deserialize_register_payment())
+        objects_should_be(expected_data, reqres_api.deserialize_single_user())
