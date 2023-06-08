@@ -1,5 +1,4 @@
 """Модуль для работы с api, отправка http запросов и получение ответов"""
-# -*- coding: utf-8 -*-
 
 import allure
 import requests
@@ -13,8 +12,7 @@ class Api:
     """Основной класс для работы с Api"""
     _HEADERS = {'Content-Type': 'application/json; charset=utf-8'}
     _TIMEOUT = 10
-    base_url = {}
-
+    
     def __init__(self):
         self.response = None
 
