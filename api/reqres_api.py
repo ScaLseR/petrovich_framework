@@ -2,7 +2,6 @@
 методы: post, get, put, delete
 """
 
-# -*- coding: utf-8 -*-
 import allure
 from api.api import Api
 from model.create_model import RequestCreateUserModel
