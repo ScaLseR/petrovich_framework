@@ -45,6 +45,7 @@ class Api:
     def get(self, url: str, endpoint: str):
         with allure.step(f"GET запрос на url: {url}{endpoint}"):
             self.response = requests.get(url=f"{url}{endpoint}",
+                                         headers=self._HEADERS,
                                          timeout=self._TIMEOUT)
         log(response=self.response)
         return self
@@ -53,6 +54,7 @@ class Api:
     def delete(self, url: str, endpoint: str):
         with allure.step(f"DELETE запрос на url: {url}{endpoint}"):
             self.response = requests.get(url=f"{url}{endpoint}",
+                                         headers=self._HEADERS,
                                          timeout=self._TIMEOUT)
         log(response=self.response)
         return self
