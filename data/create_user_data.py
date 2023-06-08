@@ -1,5 +1,4 @@
 """Дата файл для тестирования api reqres, create user"""
-# -*- coding: utf-8 -*-
 from model.create_model import RequestCreateUserModel
 
 # данные для тестов ('request_parameters')
