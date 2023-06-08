@@ -1,5 +1,4 @@
 """Дата файл для тестирования api reqres, single user"""
-# -*- coding: utf-8 -*-
 from model.single_user_model import ResponseSingleUserModel
 
 

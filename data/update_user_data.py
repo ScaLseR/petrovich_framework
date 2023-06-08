@@ -1,5 +1,4 @@
 """Дата файл для тестирования api reqres, update user"""
-# -*- coding: utf-8 -*-
 from model.update_model import RequestUpdateUserModel
 
 # данные для тестов ('user_id', 'request_parameters')
